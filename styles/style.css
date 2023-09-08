@@ -1,1 +1,231 @@
-/* место для вашего кода */
+.header,
+.footer {
+    padding: 90px 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__list {
+    display: flex;
+    text-transform: lowercase;
+}
+
+.menu__list li {
+    margin-left: 30px;
+    list-style-type: circle;
+}
+
+.menu__list li:first-of-type {
+    margin-left: 0;
+    list-style-type: none;
+}
+
+.logo {
+    width: 148px;
+    justify-self: center;
+}
+
+.header address {
+    justify-self: end;
+}
+
+.address__list {
+    list-style-type: none;
+    font-style: normal;
+    line-height: 1.3;
+}
+
+.cover {
+    height: 757px;
+    background: url(../images/cover.jpg) no-repeat center / cover;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / .6);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cover__title {
+    padding-top: 165px;
+    color: #FFF;
+    font-size: 100px;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+}
+
+.aligned_text {
+    display: block;
+    text-align: left;
+    padding-left: 50px;
+}
+
+.aligned_text span {
+    letter-spacing: 60px;
+}
+
+.aligned_text-center {
+    display: block;
+    text-align: center;
+}
+
+.aligned_text-center span {
+    letter-spacing: 60px;
+}
+
+.aligned_text-right {
+    display: block;
+    text-align: right;
+    padding-right: 50px;
+    letter-spacing: 60px;
+}
+
+.aligned_text-right span {
+    letter-spacing: 30px;
+}
+
+.cover__description {
+    display: flex;
+    height: 152px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.cover__description-text {
+    color: #FFF;
+    font-size: 22px;
+    text-transform: uppercase;
+    word-spacing: 20px;
+}
+
+.bet-button {
+    width: 257px;
+    height: 52px;
+    margin: 0 50px 0 78px;
+    background-color: transparent;
+    border: 1px solid #FFF;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+.lots {
+    margin-top: 180px;
+}
+
+.lots h2 {
+    margin: 0 0 27px 90px;
+}
+
+.lots__card-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 25px;
+    margin: 0 50px;
+}
+
+.card {
+    min-width: 316px;
+    max-width: 430px;
+    min-height: 450px;
+    flex-grow: 1;
+}
+
+.card .overlay {
+    padding: 50px 40px;
+}
+
+.card h3, article {
+    color: #FFF;
+}
+
+.card h3 {
+    font-size: 22px;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+    margin-bottom: 25px; /* Чтобы не слипаться с текстом при меньшей ширине экрана */
+}
+
+.card article {
+    font-size: 20px;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card:nth-of-type(1) {
+    background: url(../images/card-lot-01.jpg) no-repeat center / cover;
+}
+
+.card:nth-of-type(2) {
+    background: url(../images/card-lot-02.jpg) no-repeat center / cover;
+}
+
+.card:nth-of-type(3) {
+    background: url(../images/card-lot-03.jpg) no-repeat center / cover;
+}
+
+.lots__look-more-link {
+    font-size: 20px;
+    padding: 30px 90px;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 181px;
+    gap: 25px;
+}
+
+.about__logo {
+    background-color: #000;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+}
+
+.about h2 {
+    padding: 100px 0;
+}
+
+.about p {
+    font-size: 20px;
+    padding-right: 50px;
+}
+
+.about p:first-of-type {
+    margin-bottom: 25px;
+}
+
+.footer {
+    padding-top: 180px;
+}
+
+.footer__menu-list {
+    list-style: none;
+    text-transform: lowercase;
+    text-align: center;
+}
+
+.footer__social-list {
+    list-style: none;
+    width: 240px;
+    display: flex;
+    justify-content: space-between;
+    justify-self: end;
+}
+
+.footer__social-list img {
+    height: 48px;
+}
